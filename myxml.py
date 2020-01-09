@@ -2,6 +2,10 @@
 
 
 def xml(tagname, text='', **kwargs):
+    attributes = ''
+    for key, value in kwargs.items():
+        attributes += f' {key}="{value}"'
+
     return f'<{tagname}>{text}</{tagname}>'
 
 
