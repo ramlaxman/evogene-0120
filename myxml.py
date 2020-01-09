@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def xml(tagname, text=''):
+def xml(tagname, text='', **kwargs):
     return f'<{tagname}>{text}</{tagname}>'
 
 
@@ -22,8 +22,8 @@ print(xml('tag', 'text', a=1, b=2, c=3))
 
 # # # # # <tag a="1" b="2" c="3">text</tag>
 
-# print(xml('tag', 'text', a=1, b=2))
+print(xml('tag', 'text', a=1, b=2))
 # # # # # <tag a="1" b="2">text</tag>
 
-# print(xml('tag', a=1, b=2))
+print(xml('tag', a=1, b=2))
 # # # # # # <tag a="1" b="2"></tag>
