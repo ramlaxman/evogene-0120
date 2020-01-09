@@ -18,7 +18,7 @@ print(xml('a',
 
 # # # # kwargs become attributes in opening tag
 
-# print(xml('tag', 'text', a=1, b=2, c=3))
+print(xml('tag', 'text', a=1, b=2, c=3))
 
 # # # # # <tag a="1" b="2" c="3">text</tag>
 
